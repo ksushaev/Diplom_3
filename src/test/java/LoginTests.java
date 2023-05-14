@@ -24,8 +24,7 @@ public class LoginTests {
     PersonalAccountPage personalAccountPage;
     CreateUser user = CreateUser.getUserWithRandomStringUtils();
     ChecksForUser checksForUser = new ChecksForUser();
-    private final DataForLoginUser dataForLoginUser = new DataForLoginUser().from(user);
-    private String accessToken = "";
+    private final DataForLoginUser dataForLoginUser = DataForLoginUser.from(user);
 
     @Before
     public void setup() {
